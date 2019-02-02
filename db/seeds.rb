@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # Seed the MyFavouriteBooks DB with some movies.
 more_books = [
- {:title => 'Harry Potter 1', :genere => 'Science fiction', :description => 'Harry Potter book 1', :isbn_number => '978-3-16-148410-0', :publish_date => '25-Nov-1992'},
- {:title => 'Harry Potter 2', :genere => 'Science fiction', :description => 'Harry Potter book 2', :isbn_number => '978-3-16-148410-1', :publish_date => '25-Nov-1993'},
- {:title => 'Harry Potter 3', :genere => 'Science fiction', :description => 'Harry Potter book 3', :isbn_number => '978-3-16-148410-2', :publish_date => '25-Nov-1994'},
- {:title => 'Harry Potter 4', :genere => 'Science fiction', :description => 'Harry Potter book 4', :isbn_number => '978-3-16-148410-3', :publish_date => '25-Nov-1995'},
- {:title => 'Harry Potter 5', :genere => 'Science fiction', :description => 'Harry Potter book 5', :isbn_number => '978-3-16-148410-4', :publish_date => '25-Nov-1996'}
+ {:author => 'Georgi', :title => 'Harry Potter 1', :genere => 'Science fiction', :description => 'Harry Potter book 1', :isbn_number => '978-3-16-148410-0', :publish_date => '25-Nov-1992'},
+ {:author => 'JK', :title => 'Harry Potter 2', :genere => 'Science fiction', :description => 'Harry Potter book 2', :isbn_number => '978-3-16-148410-1', :publish_date => '25-Nov-1993'},
+ {:author => 'Rowling', :title => 'Harry Potter 3', :genere => 'Science fiction', :description => 'Harry Potter book 3', :isbn_number => '978-3-16-148410-2', :publish_date => '25-Nov-1994'},
+ {:author => 'In', :title => 'Harry Potter 4', :genere => 'Science fiction', :description => 'Harry Potter book 4', :isbn_number => '978-3-16-148410-3', :publish_date => '25-Nov-1995'},
+ {:author => 'The Deep', :title => 'Harry Potter 5', :genere => 'Science fiction', :description => 'Harry Potter book 5', :isbn_number => '978-3-16-148410-4', :publish_date => '25-Nov-1996'}
 ]
 more_books.each do |book|
  Book.create!(book)

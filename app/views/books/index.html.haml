@@ -16,6 +16,7 @@
     %tr
       %th{:class => @title_header}= link_to 'Book Title', books_path(:sort => 'title', :generes => @selected_generes), :id => 'title_header'
       %th Genre
+      %th Author
       %th Description
       %th{:class => @date_header}= link_to 'Publish Date', books_path(:sort => 'publish_date', :generes => @selected_generes), :id => 'publish_date_header'
       %th ISBN Number
@@ -26,6 +27,7 @@
       %tr
         %td= book.title
         %td= book.genere
+        %td= book.author
         %td= book.description
         %td= book.publish_date
         %td= book.isbn_number

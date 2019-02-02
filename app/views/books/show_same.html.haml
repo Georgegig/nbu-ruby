@@ -1,0 +1,19 @@
+%table#same_author_books
+  %thead
+    %tr
+      %th Book Title
+      %th Genre
+      %th Author
+      %th Description
+      %th Publish Date
+      %th ISBN Number
+      
+  %tbody
+    - @same_author_books.each do |book| 
+      %tr
+        %td= book.title
+        %td= book.genere
+        %td= book.author
+        %td= book.description
+        %td= book.publish_date
+        %td= book.isbn_number

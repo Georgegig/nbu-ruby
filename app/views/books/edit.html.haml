@@ -10,5 +10,7 @@
     = text_field :book, :isbn_number
     = label :book, :publish_date, 'Publish date'
     = date_select :book, :publish_date
-    = submit_tag 'Save Changes'
+    = label :book, :title, 'Author'
+    = text_field :book, :author
+    = submit_tag 'Update Book Info'
 
