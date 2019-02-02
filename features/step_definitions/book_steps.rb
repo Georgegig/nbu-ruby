@@ -7,7 +7,7 @@ Given /the following books exist/ do |books_table|
 end
 
 Then /(.*) seed books should exist/ do | n_seeds |
-    assert Book.count == n_seeds.to_i
+    expect(Book.count).to eq(n_seeds.to_i)
 end
 
 Then /^the author of "([^"]*)" should be "([^"]*)"$/ do |title, value|
