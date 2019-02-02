@@ -3,7 +3,7 @@
 = form_tag books_path, :method => :post do
  = label :book, :title, 'Title'
  = text_field :book, :title
- = label :book, :genere, 'genere'
+ = label :book, :genere, 'Genere'
  = select :book, :genere, ['Science fiction', 'Drama', 'Action and adventure', 'Romance', 'Mystery', 'Horror']
  = label :book, :description, 'Description'
  = text_field :book, :description
